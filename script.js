@@ -1,4 +1,4 @@
-// Function to encrypt the message using Caesar Cipher
+
 function caesarCipherEncrypt(text, shift) {
     shift = shift % 26;
     let result = '';
@@ -22,12 +22,11 @@ function caesarCipherEncrypt(text, shift) {
     return result;
 }
 
-// Function to decrypt the message using Caesar Cipher
+
 function caesarCipherDecrypt(text, shift) {
     return caesarCipherEncrypt(text, -shift);
 }
 
-// Function to handle encryption
 function encryptText() {
     const plaintext = document.querySelector('.enc #plaintext').value;
     const shift = parseInt(document.querySelector('.enc #shift').value);
@@ -35,7 +34,6 @@ function encryptText() {
     document.getElementById('encrypted').innerText = encryptedText;
 }
 
-// Function to handle decryption
 function decryptText() {
     const plaintext = document.querySelector('.dec #plaintext').value;
     const shift = parseInt(document.querySelector('.dec #shift').value);
